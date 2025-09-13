@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: #f0f4f8;
+}
+
+/* Button with CSS transition */
+.hover-btn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background: #6200ea;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hover-btn:hover {
+  transform: scale(1.1);
+  background: #3700b3;
+}
+
+/* Box animation container */
+.box-container {
+  margin: 40px 0;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background: #03dac6;
+  line-height: 150px;
+  color: #000;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+/* Keyframe animation */
+@keyframes slideAndSpin {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-100px) rotate(180deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+/* Class added by JS to trigger animation */
+.animate {
+  animation: slideAndSpin 2s ease-in-out;
+}
+
+/* Form section styling */
+.form-section {
+  margin-top: 50px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 150px;
+  margin-right: 10px;
+}
+
+#calcBtn {
+  padding: 8px 16px;
+  background: #03a9f4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#calcBtn:hover {
+  background: #0288d1;
+}
